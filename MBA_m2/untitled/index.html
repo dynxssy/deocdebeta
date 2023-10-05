@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encoder/Decoder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Encoder/Decoder</h1>
+
+  <!-- Encoding Section -->
+  <div id="encodeSection" class="section">
+    <h2>Encode</h2>
+    <label for="encodeInput">Enter a word to encode:</label>
+    <input type="text" id="encodeInput" placeholder="Enter word">
+    <button onclick="encode()">Encode</button>
+    <p id="encodedResult"></p>
+    <button id="copyButton" onclick="copyEncoded()" class="copy-button" style="display: none;">Copy Encoded Word</button>
+    <p id="seedOutput"></p>
+  </div>
+
+  <!-- Decoding Section -->
+  <div id="decodeSection" class="section">
+    <h2>Decode</h2>
+    <label for="decodeInput">Enter the encoded word to decode:</label>
+    <input type="text" id="decodeInput" placeholder="Enter encoded word">
+    <label for="decodeSeed">Enter the seed for decoding:</label>
+    <input type="number" id="decodeSeed" placeholder="Enter 6-digit seed">
+    <button onclick="decode()">Decode</button>
+    <p id="decodedResult"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
